@@ -46,4 +46,13 @@
       cursor: pointer;
     }
   }
+
+  .submit.success {
+    color: $background-color;
+    background-size: 100% 100%;
+
+    @include hover.hover{
+      cursor: auto;
+    }
+  }
 }

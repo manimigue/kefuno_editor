@@ -36,6 +36,7 @@ class Contact extends Component {
   }
 
   render(){
+    const success = this.state.status === "SUCCESS"
     return (
       <div className="contact-form">
         <Helmet>
@@ -56,7 +57,7 @@ class Contact extends Component {
             <input type='text' name='件名' />
           <p>お問い合わせ内容</p>
           <textarea name='お問い合わせ内容'></textarea>
-          <input className='submit' type="submit" value='Send'/>
+          <input className={success ? 'submit success' : 'submit'} type="submit" value={success ? 'Thank you!' : 'Send'}/>
         </form>
       </div>
     )
