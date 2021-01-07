@@ -46,7 +46,7 @@ class Contact extends Component {
         <p>ご質問ありましたらこちらにお願い致します。</p>
         <form 
           onSubmit={this.submitForm}
-          action="https://formspree.io/f/mjvpjyww"
+          action="https://formspree.io/f/mnqolpon"
           method="POST"
         >
           <p>お名前</p>
