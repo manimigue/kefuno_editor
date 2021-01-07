@@ -4,12 +4,38 @@ import {Helmet} from 'react-helmet';
 import '../sass/main/contact.scss'
 
 class Contact extends Component {
+  constructor(props) {
+    super(props);
+    this.submitForm = this.submitForm.bind(this);
+    this.state = {
+      status: ""
+    };
+  }
+
   componentDidMount() {
     window.scrollTo(0, 0)
   }
 
+  submitForm(ev) {
+    ev.preventDefault();
+    const form = ev.target;
+    const data = new FormData(form);
+    const xhr = new XMLHttpRequest();
+    xhr.open(form.method, form.action);
+    xhr.setRequestHeader("Accept", "application/json");
+    xhr.onreadystatechange = () => {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        form.reset();
+        this.setState({ status: "SUCCESS" });
+      } else {
+        this.setState({ status: "ERROR" });
+      }
+    };
+    xhr.send(data);
+  }
+
   render(){
-    const mail = "manimigue@moegi.waseda.jp";
     return (
       <div className="contact-form">
         <Helmet>
@@ -17,7 +43,11 @@ class Contact extends Component {
         </Helmet>
         <h2 className="title">Contact</h2>
         <p>ご質問ありましたらこちらにお願い致します。</p>
-        <form method="POST" action={"https://formspree.io/" + mail} >
+        <form 
+          onSubmit={this.submitForm}
+          action="https://formspree.io/f/mjvpjyww"
+          method="POST"
+        >
           <p>お名前</p>
           <input type='text' name='お名前' placeholder="佐藤　太郎" />
           <p>メールアドレス</p>
