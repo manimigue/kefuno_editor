@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/kefuno_editor/static/css/main.77ef8afd.chunk.css",
-    "main.js": "/kefuno_editor/static/js/main.3e9171ed.chunk.js",
-    "main.js.map": "/kefuno_editor/static/js/main.3e9171ed.chunk.js.map",
+    "main.js": "/kefuno_editor/static/js/main.15804eb5.chunk.js",
+    "main.js.map": "/kefuno_editor/static/js/main.15804eb5.chunk.js.map",
     "runtime-main.js": "/kefuno_editor/static/js/runtime-main.a4f6c423.js",
     "runtime-main.js.map": "/kefuno_editor/static/js/runtime-main.a4f6c423.js.map",
     "static/js/2.c5074182.chunk.js": "/kefuno_editor/static/js/2.c5074182.chunk.js",
@@ -32,6 +32,6 @@
     "static/js/runtime-main.a4f6c423.js",
     "static/js/2.c5074182.chunk.js",
     "static/css/main.77ef8afd.chunk.css",
-    "static/js/main.3e9171ed.chunk.js"
+    "static/js/main.15804eb5.chunk.js"
   ]
 }
