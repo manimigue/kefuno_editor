@@ -1,14 +1,13 @@
 [
   {
     "date": "2021-01-07",
-    "url": "news1_20210106",
-    "id": 1,
+    "author": "Miguel",
     "tag": [
       "更新"
     ],
-    "author": "Miguel",
-    "file": "news1_記事更新",
     "title": "記事の更新方法",
+    "id": 1,
+    "file": "news1_記事更新",
     "copied": [
       "kefunoApp.zip",
       "typora_download.png",
@@ -22,19 +21,39 @@
       "style.png",
       "upload1.png",
       "upload2.png"
-    ]
+    ],
+    "url": "news1_20210106"
   },
   {
     "date": "2021-01-07",
-    "url": "news2_20210106",
-    "id": 2,
+    "author": "Miguel",
     "tag": [
       "お知らせ",
       "更新"
     ],
-    "author": "Miguel",
-    "copied": [],
     "title": "Typoraの使い方",
-    "file": "news2_Typoraの使い方"
+    "id": 2,
+    "file": "news2_Typoraの使い方",
+    "copied": [],
+    "url": "news2_20210106"
+  },
+  {
+    "author": "Miguel",
+    "date": "2021-01-07",
+    "copied": [
+      "register.png",
+      "dashboard.png",
+      "create_project.png",
+      "add_form.png",
+      "endpoint.png"
+    ],
+    "title": "Formの設定方法",
+    "id": 3,
+    "file": "news3_Formの設定方法",
+    "tag": [
+      "お知らせ",
+      "更新"
+    ],
+    "url": "news3_20210106"
   }
 ]
