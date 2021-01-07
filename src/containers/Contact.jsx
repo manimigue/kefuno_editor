@@ -1,5 +1,4 @@
 import React,{ Component } from 'react';
-import {Helmet} from 'react-helmet';
 
 import '../sass/main/contact.scss'
 
@@ -39,9 +38,6 @@ class Contact extends Component {
     const success = this.state.status === "SUCCESS"
     return (
       <div className="contact-form">
-        <Helmet>
-          <title>kefuno_edit お問い合わせ</title>
-        </Helmet>
         <h2 className="title">Contact</h2>
         <p>ご質問ありましたらこちらにお願い致します。</p>
         <form 
