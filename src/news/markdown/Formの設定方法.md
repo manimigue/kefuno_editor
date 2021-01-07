@@ -21,15 +21,15 @@ Contactとチケットフォームの設定方法が変更されました。受�
 
 #### 2. ProjectとFormを追加
 
-まず  <button style='color:#fff;border-color: #e5122e;text-decoration: none;background: #e5122e;border-radius: 3px;font-weight: bold !important;padding: 8px 10px;text-transform: none;font-family: "Helvetica","Arial";font-size:14px;line-height:1'>+ New Project</button>　ボタンを押し，kefunoという新しいプロジェクトを作成します。TypeはDashboard Projectでお願いします。
+まず + New Project ボタンを押し，kefunoという新しいプロジェクトを作成します。TypeはDashboard Projectでお願いします。
 
 ![create_project](assets/create_project.png)
 
-作成できたら，続いて  <button style='color:#fff;border-color: #e5122e;text-decoration: none;background: #e5122e;border-radius: 3px;font-weight: bold !important;padding: 8px 10px;text-transform: none;font-family: "Helvetica","Arial";font-size:14px;line-height:1'>+ New Form</button>  ボタンを押し，Contactというフォームを作成してください。メールの認証が完了していれば，そのメールが選択できます。
+作成できたら，続いて  + New Form ボタンを押し，Contactというフォームを作成してください。メールの認証が完了していれば，そのメールが選択できます。
 
 ![add_form](assets/add_form.png)
 
-フォームが作成できたら，以下の画面に遷移します。以下では伏字になっているendpointのURLを，<button style='color: #103742;border: 2px solid #103742;text-decoration: none;border-radius: 3px;font-weight: bold !important;padding: 8px 10px;text-transform: none;font-family: "Helvetica","Arial";font-size:14px;line-height:1'>Copy</button>  ボタンからコピーしmanimigue@moegi.waseda.jpまたは[Contact]("/")までお送りください。
+フォームが作成できたら，以下の画面に遷移します。以下では伏字になっているendpointのURLを，Copy ボタンからコピーしmanimigue@moegi.waseda.jpまたは[Contact](/kefuno_editor)までお送りください。
 
 ![endpoint](assets/endpoint.png)
 
