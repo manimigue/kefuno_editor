@@ -1,0 +1,30 @@
+@use "sass:list";
+@use "sass:map";
+@use "sass:string";
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: otf ttf woff) {
+  $src: null;
+
+  $formats: (
+    otf: "opentype",
+    ttf: "truetype",
+    woff: "woff"
+  );
+
+  @each $ext in $exts {
+    $format: map.get($formats, $ext);
+    $src: list.append($src, local(string.quote($name)), comma);
+    $src: list.append($src, url(string.quote($path)) format(string.quote($format)), comma);
+  }
+
+  @font-face {
+    font-family: string.quote($name);
+    font-style:  $style;
+    font-weight: $weight;
+    src: $src;
+    font-display: swap;
+  }
+}
+
+@include font-face('Baskerville Normal', './fonts/baskvl.woff',normal, normal , woff);
+@include font-face('Sorts Mill Goudy', './fonts/SortsMillGoudy-Regular.ttf',normal, normal , ttf);
+@include font-face('Noto Serif JP', './fonts/NotoSerifJP-Regular.otf',normal, normal , otf);

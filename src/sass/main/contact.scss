@@ -1,0 +1,36 @@
+@use './main';
+@use './form';
+@use '../mixin/window';
+@use '../mixin/color';
+
+$dark: color.$dark;
+$bright: color.$bright;
+
+.contact-form {
+  @include main.setMargin;
+
+  @include form.formStyle($dark);
+
+  @include form.submitStyle($bright, $dark);
+  
+  textarea{
+    height: 150px;
+  }
+  
+
+  @include window.minmiddle{
+    input,textarea {
+      width : 400px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @include window.minmax{
+      p{
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+}

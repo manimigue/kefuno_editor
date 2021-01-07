@@ -1,0 +1,5 @@
+@mixin hover {
+  body.hasHover &:hover{
+    @content;
+  }
+}

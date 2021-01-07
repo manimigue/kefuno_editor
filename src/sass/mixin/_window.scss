@@ -1,0 +1,154 @@
+@use './media';
+
+$small: 460px;
+$sm: 576px;
+$middle: 732px;
+$md: 768px;
+$big: 850px;
+$max: 1018px;
+
+$iphoneSE: 320px;
+
+@mixin smallmiddle {
+  @include media.widthminmax($small,$middle){
+    @content;
+  }
+}
+
+@mixin smallbig {
+  @include media.widthminmax($small,$big){
+    @content;
+  }
+}
+
+@mixin smallmax {
+  @include media.widthminmax($small,$max){
+    @content;
+  }
+}
+
+@mixin middlebig {
+  @include media.widthminmax($middle,$big){
+    @content;
+  }
+}
+
+@mixin middlemax {
+  @include media.widthminmax($middle,$max){
+    @content;
+  }
+}
+
+@mixin bigmax {
+  @include media.widthminmax($big,$max){
+    @content;
+  }
+}
+
+@mixin minsmall {
+  @include media.widthmin($small){
+    @content;
+  }
+}
+
+@mixin minmiddle {
+  @include media.widthmin($middle){
+    @content;
+  }
+}
+
+@mixin minbig {
+  @include media.widthmin($big){
+    @content;
+  }
+}
+
+@mixin minmax {
+  @include media.widthmin($max){
+    @content;
+  }
+}
+
+@mixin hsmallmiddle {
+  @include media.heightminmax($small,$middle){
+    @content;
+  }
+}
+
+@mixin hsmallbig {
+  @include media.heightminmax($small,$big){
+    @content;
+  }
+}
+
+@mixin hsmallmax {
+  @include media.heightminmax($small,$max){
+    @content;
+  }
+}
+
+@mixin hmiddlebig {
+  @include media.heightminmax($middle,$big){
+    @content;
+  }
+}
+
+@mixin hmiddlemax {
+  @include media.heightminmax($middle,$max){
+    @content;
+  }
+}
+
+@mixin hbigmax {
+  @include media.heightminmax($big,$max){
+    @content;
+  }
+}
+
+@mixin hminsmall {
+  @include media.heightmin($small){
+    @content;
+  }
+}
+
+@mixin hminmiddle {
+  @include media.heightmin($middle){
+    @content;
+  }
+}
+
+@mixin hminbig {
+  @include media.heightmin($big){
+    @content;
+  }
+}
+
+@mixin hminmax {
+  @include media.heightmin($max){
+    @content;
+  }
+}
+
+@mixin hmaxsmall {
+  @include media.heightmax($small){
+    @content;
+  }
+}
+
+@mixin hmaxmiddle {
+  @include media.heightmax($middle){
+    @content;
+  }
+}
+
+@mixin hmaxbig {
+  @include media.heightmax($big){
+    @content;
+  }
+}
+
+@mixin hmaxmax {
+  @include media.heightmax($max){
+    @content;
+  }
+}

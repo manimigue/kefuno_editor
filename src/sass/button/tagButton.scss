@@ -1,0 +1,33 @@
+@use '../mixin/color';
+@use '../mixin/hover';
+
+$link: color.$link;
+
+.tagButton {
+  background: transparent;
+  border: gray 1px solid;
+  border-radius: 5px;
+  color: gray;
+  transition: .3s ease;
+  
+  @include hover.hover{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    outline: none;
+    cursor: pointer;
+  }
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  &.link {
+    color: $link;
+    border-color: $link;
+  }
+
+  &.selected{
+    color: white;
+    background-color: gray;
+    border-color: rgb(83, 83, 83);
+  }
+}

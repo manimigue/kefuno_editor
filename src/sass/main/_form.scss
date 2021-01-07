@@ -1,0 +1,49 @@
+@use '../mixin/hover';
+
+@mixin formStyle($border-color) {
+  input,textarea,select{
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top : 10px;
+    margin-bottom : 30px;
+    border : 1px solid $border-color;
+    border-radius: 5px;
+  }
+
+  input, textarea{
+    padding : 18px;
+    font-size : 18px;
+  }
+
+  select{
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    background-clip: padding-box;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+@mixin submitStyle($background-color, $color) {
+  .submit{
+    background-color : $background-color;
+    color : $color;
+    background-image: linear-gradient($color, $color);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    transition: background-size .5s, color .5s;
+    @include hover.hover{
+      color : $background-color;
+      background-size: 100% 100%;
+      cursor: pointer;
+    }
+  }
+}

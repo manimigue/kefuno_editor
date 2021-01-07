@@ -1,0 +1,49 @@
+@use '../mixin/window';
+@use './main';
+@use '../mixin/hover';
+
+.articleContent {
+  @include main.setMargin;
+
+  flex: 1 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  & > button.back-button {
+      width: 74px;
+      color: #5f9dda !important;
+      background: none;
+      border: none;
+      border-bottom: 1px solid #5f9dda !important;
+      outline: 0;
+      @include hover.hover{
+        cursor: pointer;
+        outline: 0;
+      }
+    }
+  .article {
+    flex-grow:  1;
+    margin-top: 10px;
+
+    p {
+      color: rgb(0, 0, 0);
+      font-size: 1rem;
+      line-height: 1.75rem;
+      margin: 0 0 1.25rem;
+    }
+
+    ol,ul {
+      overflow-x: scroll;
+    }
+    img {
+      display: block;
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      @include window.minmiddle{
+        max-width: 80%;
+      }
+    }
+  }
+}
